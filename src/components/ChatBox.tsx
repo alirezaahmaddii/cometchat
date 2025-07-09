@@ -103,6 +103,7 @@ const ChatBox: React.FC<Props> = ({ selectedUser }) => {
         }
       );
 
+      // @ts-ignore
       const translatedText = translated?.translations?.[0]?.message_translated;
 
       if (translatedText) {
