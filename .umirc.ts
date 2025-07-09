@@ -11,6 +11,17 @@ export default defineConfig({
     'process.env.REGION': process.env.REGION,
     'process.env.AUTH_KEY': process.env.AUTH_KEY,
   },
+  routes: [
+    {
+      path: '/',
+      redirect: '/home',
+    },
+    {
+      name: 'Home',
+      path: '/home',
+      component: './Home',
+    },
+  ],
   npmClient: 'pnpm',
 });
 
