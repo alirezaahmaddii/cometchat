@@ -28,7 +28,7 @@ export const VideoCall: React.FC<Props> = ({ sessionId, onClose }) => {
 
     return () => {
       CometChat.removeCallListener(listenerId);
-      CometChat.endCall();
+      CometChat.endCall(sessionId);
     };
   }, [sessionId]);
 
